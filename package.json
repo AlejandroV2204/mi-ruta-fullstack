@@ -5,11 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./server/index.js",
+    "start": "vite",
     "client": "npm run dev --prefix ./client",
-    "dev": "npm install --prefix ./client && concurrently \"npm run start\" \"npm run client\"",
-    "build": "npm run build --prefix ./client",
-    "lint": "eslint ."
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
