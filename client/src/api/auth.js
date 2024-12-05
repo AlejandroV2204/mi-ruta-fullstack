@@ -1,6 +1,6 @@
 import axios from 'axios' // Importa la biblioteca Axios para realizar solicitudes HTTP
 
-const API = '/api';  // Usa una ruta relativa en lugar de http://localhost:3000
+const API = 'http://localhost:3000';  // Usa una ruta relativa en lugar de http://localhost:3000
 
 // Consultas USERS
 export const getUsuariosRequest = id_usuario => axios.get(`${API}/usuarios/${id_usuario}`);
