@@ -7,7 +7,9 @@
   "scripts": {
     "start": "nodemon ./server/index.js",
     "client": "npm run dev --prefix ./client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "build": "npm run build --prefix ./client",
+    "lint": "eslint ."
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.0.1",
+    "eslint": "^9.9.0",
     "nodemon": "^3.1.4"
   }
 }
